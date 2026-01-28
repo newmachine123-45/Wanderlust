@@ -1,0 +1,22 @@
+<% layout('/layouts/boilerplate') %>
+<div class="row mt-3">
+    <h1 class="col-6 offset-3">Login</h1>
+    <div class="col-6 offset-3">
+        <form method="POST" action="/login" class="needs-validation" novalidate>
+        <!-- class="needs-validation" novalidate for bootstrap validation -->
+        <!-- so we are making a object named listing and its first key will be title e.g. listing[title] and second key will be listing[description] -->
+         <div class="mb-3">
+         <label for="username" class="form-label">Username</label>
+        <input name="username" id="username" type="text" class="form-control" required></input>
+        <div class="valid-feedback">looks Good!</div>
+         </div>
+
+        <div class="mb-3">
+         <label for="password" class="form-label">Password</label>
+        <input name="password" id="password" type="password" class="form-control" required></input>
+        <button class="btn btn-success">Login</button>
+         </div>
+         </div>
+        </form>
+    </div>
+</div>
