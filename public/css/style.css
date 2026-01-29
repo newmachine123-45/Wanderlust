@@ -317,3 +317,40 @@ body {
         height: 180px;
     }
 }
+
+/* review styling */
+/* ===== REVIEW RESPONSIVE FIX ===== */
+.starability-basic {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  border-radius: 12px;
+}
+
+@media (max-width: 576px) {
+  .starability-basic {
+    justify-content: center;
+  }
+
+  .review-card strong {
+    font-size: 0.95rem;
+  }
+
+  .review-card p {
+    font-size: 0.9rem;
+  }
+}
+
+.show-img {
+  height: 320px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .show-img {
+    height: 220px;
+  }
+}
